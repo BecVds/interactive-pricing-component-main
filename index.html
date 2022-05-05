@@ -6,35 +6,39 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
 </head>
 <body>
 
-  <div class="main-container">
+  <div class="background">
+  </div>
 
-    <div class="background">
-      <div class="img-contianer">
-        <img src="./images/pattern-circles.svg" alt="background-image">
-      </div>
-    </div>
+  <div class="main-container">
 
     <!-- heading container -->
     <div class="heading-container">
       <h1>Simple, traffic-based pricing</h1>
       <p>
         Sign-up for our 30-day trial. No credit card required.
-      </p>    
+      </p>
+      <div class="img-contianer">
+        <img src="./images/pattern-circles.svg" alt="background-image">
+      </div>    
     </div> 
   
     <!-- card container -->
     <div class="card-container">
       <div class="top">
         <div class="pricing-container">
-          <h3><span>100K</span> Pageviews</h3>
+          <h3><span>100K</span> PAGEVIEWS</h3>
           <div class="subscription-selection-slider">
             <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
+            <div class="box-shadow-container"></div>
           </div>
           <h3><span id="money-display">$16.00</span> /month</h3>
         </div>
@@ -47,7 +51,7 @@
             <!-- <span class="slider round"></span> -->
           </label>
           <h4 class="year">
-            Yearly Billing <span>25%</span>
+            Yearly Billing <span>-25%</span>
           </h4>
         </div>
       </div>
